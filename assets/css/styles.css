@@ -1,0 +1,78 @@
+/* Common */
+
+:root {
+    --primary-color: #1EBFC1;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.content-main {
+    width: 100%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* =============== Header ================ */
+
+.header {
+    position: sticky;
+    top: -27px;
+    padding-top: 27px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.nav-bar ul {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-bar ul li {
+    margin-right: 39px;
+}
+
+.nav-bar ul li a {
+    color: #2F3A3B;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.nav-bar ul li a:hover {
+    text-shadow: 1px 0px 0px currentColor;
+}
+
+.nav-bar ul li:last-child {
+    margin-left: 177px;
+    margin-right: 24px;
+    color: #494949;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
