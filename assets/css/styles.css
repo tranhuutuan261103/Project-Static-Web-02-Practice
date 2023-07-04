@@ -172,7 +172,7 @@ a {
     line-height: normal;
 }
 
-.hero .image-hero .courses {
+.hero .image-hero .courses-hero {
     position: absolute;
     display: flex;
     align-items: center;
@@ -188,7 +188,7 @@ a {
     box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
 }
 
-.hero .image-hero .courses .book {
+.hero .image-hero .courses-hero .book {
     position: relative;
     margin-right: 10px;
     width: 42px;
@@ -200,7 +200,7 @@ a {
     background-color: #FF8282;
 }
 
-.hero .image-hero .courses .book::before {
+.hero .image-hero .courses-hero .book::before {
     position: absolute;
     top: 28px;
     left: 4px;
@@ -381,4 +381,189 @@ a {
 
 .features .features-list .feature-item:nth-child(3) .desc {
     max-width: 224px;
+}
+
+/* ================= Courses ===============*/
+
+.courses {
+    padding-top: 65px;
+    padding-bottom: 130px;
+}
+
+.courses .row .desc-heading {
+    color: #767E7E;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.courses .row .heading-2 {
+    margin: 18px 0;
+    color: #0D1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.courses .row .sub-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courses .row .sub-row .desc {
+    max-width: 525px;
+    color: #767E7E;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.78;
+}
+
+.courses .row .sub-row .view-all {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+/* Courses list */
+
+.courses .courses-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.courses .courses-list .course-item {
+    position: relative;
+    width: 30.6%;
+    height: 393px;
+}
+
+.courses .courses-list .course-item .thumb {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.courses .courses-list .course-item .opacity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    opacity: 0.3499999940395355;
+    background: #D0EFED;
+    z-index: 99;
+}
+
+.courses .courses-list .course-item .course-content {
+    position: absolute;
+    top: 322px;
+    left: 17px;
+    padding-top: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 29px;
+    width: calc(100% - 84px);
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+}
+
+.courses .courses-list .course-item .course-content .heading-3 {
+    margin-bottom: 16px;
+}
+
+.courses .courses-list .course-item .course-content .heading-3 a {
+    color: #0D1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.courses .courses-list .course-item .course-content .fee {
+    color: #767E7E;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.courses .courses-list .course-item .course-content .fee strong {
+    color: #0D1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.courses .courses-list .course-item .course-content .desc {
+    margin-top: 6px;
+    margin-bottom: 18px;
+    color: #9DA6A5;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.courses .courses-list .course-item .course-content .infor-course {
+    display: flex;
+    align-items: center;
+}
+
+.courses .courses-list .course-item .course-content .infor {
+    display: flex;
+    align-items: center;
+    color: #9DA6A5;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.courses .courses-list .course-item .course-content .infor::before {
+    margin-right: 10px;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.courses .courses-list .course-item .course-content .duration {
+    margin-left: 10px;
+}
+
+/* == Statistics ==*/
+
+.statistics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    justify-content: center;
+    margin-top: 389px;
+    margin-bottom: 264px;
+}
+
+.statistics .statistic-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statistics .value strong {
+    color: #0D1111;
+    text-align: center;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.statistics .name {
+    margin-top: 11px;
+    color: #767E7E;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
 }
