@@ -42,6 +42,8 @@ a {
     position: sticky;
     top: -27px;
     padding-top: 27px;
+    z-index: 999;
+    background-color: #DEF6F5;
 }
 
 .nav-bar {
@@ -80,7 +82,8 @@ a {
 /* ================= Hero ============== */
 
 .hero {
-    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 79px;
 }
 
 .hero .body {
@@ -309,4 +312,73 @@ a {
 
 .hero .image-hero .students .list-avatars .avatar span {
     color: #fff;
+}
+
+/* ============= Features ============== */
+
+.features {
+    padding-top: 130px;
+    padding-bottom: 65px;
+}
+
+.features .row {
+    max-width: 600px;
+}
+
+.features .desc-heading {
+    color: #767E7E;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.features .heading-2 {
+    margin: 18px 0;
+    color: #0D1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.34;
+}
+
+.features .desc {
+    color: #767E7E;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/* === Features list === */
+
+.features .features-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.features .features-list .feature-item .feature-name {
+    margin-top: 26px;
+    margin-bottom: 16px;
+}
+
+.features .features-list .feature-item .feature-name a {
+    color: #0D1111;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.features .features-list .feature-item .desc {
+    color: #9DA6A5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6875;
+}
+
+.features .features-list .feature-item:nth-child(1) .desc {
+    max-width: 168px;
+}
+
+.features .features-list .feature-item:nth-child(2) .desc {
+    max-width: 223px;
+}
+
+.features .features-list .feature-item:nth-child(3) .desc {
+    max-width: 224px;
 }
